@@ -11,8 +11,8 @@ import streamlit as st
 # Prefer secrets or environment variable. Do NOT hardcode keys in code/repo.
 API_KEY = (
     st.secrets.get("AIzaSyBV9ZSqfqlxW2H6Z-HsPJxEwQ7bt3qhcKc")
-    or os.getenv("YOUTUBE_API_KEY")
-    or ""
+    #or os.getenv("YOUTUBE_API_KEY")
+    #or ""
 )
 
 YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
